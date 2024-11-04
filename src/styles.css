@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+.imagecss {
+    max-width: 150px; /* حدد العرض الأقصى للصورة حسب الحاجة */
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+  }
+  

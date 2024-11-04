@@ -1,0 +1,126 @@
+<br><br><br>
+<div class="container">
+    <h1>Como se Registrar na Agência Poppo?</h1>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <a class="btn btn-primary btn-lg" [href]="linkagent" target="_blank">Torne-se um Agente na Poppo Live</a>
+        </div>
+    </div>
+    <div class="row align-items-center p-3">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <ol>
+                <li><a [href]="link" target="_blank">Baixe</a> o Poppo Live.</li>
+                <br>
+                <div class="d-flex gap-1">
+                  <!-- Play Store Button -->
+                  <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-google-play"></i> Baixar no Play Store
+                  </a>
+              
+                  <!-- Apple Store Button -->
+                  <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-apple"></i> Baixar na Apple Store
+                  </a>
+              
+                  <!-- Huawei Store Button -->
+                  <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-huawei"></i> Baixar na Huawei Store
+                  </a>
+              
+                  <!-- APK Download Button -->
+                  <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/" class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-file-earmark-arrow-down"></i> Baixar APK
+                  </a>
+              </div>
+              
+                  
+                  <!-- Bootstrap Icons CDN (para ícones) -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+                  <br>
+                <li>Crie uma Conta no App Poppo Live.</li>
+                <li>Copie seu ID Poppo do perfil.</li>
+                <li>Clique no <a [href]="linkagent">Link de Registro da Agência</a>.</li>
+                <li>Digite seu ID Poppo e clique em “Obter”.</li>
+                <li>Encontre o código de verificação nas mensagens do Poppo.</li>
+                <li>Digite o Código de Verificação e envie.</li>
+            </ol>
+        </div>
+ 
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+              <!-- Cartão de Transmissão Ao Vivo -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(live_stream)"> 
+                <img [src]="live_stream" alt="Transmissão Ao Vivo" class="card-img-top">
+              </div>
+          
+              <!-- Cartão de Sala de Festa -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(party_room)">
+                <img [src]="party_room" alt="Sala de Festa" class="card-img-top">
+              </div>
+          
+              <!-- Cartão de Vídeo Curto -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(short_video)">
+                <img [src]="short_video" alt="Vídeo Curto" class="card-img-top">
+              </div>
+          
+              <!-- Cartão de Animação Dupla -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(dual_animation)">
+                <img [src]="dual_animation" alt="Animação Dupla" class="card-img-top">
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+            <div class="col text-center">
+              <a class="btn btn-warning btn-lg w-100" [href]="linkagent" target="_blank">LINK DE REGISTRO DA AGÊNCIA</a>
+            </div>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="border: none;"> <!-- Remover borda -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalLabel">Pré-visualização da Imagem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img id="modalImage" src="" alt="Pré-visualização da Imagem" class="img-fluid" style="border: none;"> <!-- Remover borda -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+</div>
+
+<div class="container">
+  <h1>Entre em Contato Conosco</h1>
+  <div class="row align-items-center">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <p>Estamos disponíveis 24/7 para oferecer suporte aos nossos clientes.</p>
+          <div class="d-flex flex-column flex-md-row">
+              <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037" target="_blank">Contato pelo WhatsApp</a>
+              <a class="btn btn-primary" [href]="linkagent" target="_blank">Torne-se um Agente Poppo</a>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+          <img [src]="contact" alt="contact" class="rounded shadow" style="border-radius: 15px; border: 2px solid #ddd;">
+      </div>
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+  <h1>Sobre Nós</h1>
+  <div class="container my-4">
+      <div class="row align-items-center">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+              <p>
+                  O POPPO LIVE é uma plataforma de transmissão ao vivo. Através de nossos esforços constantes, esperamos realizar o sonho de estrela de milhões de pessoas comuns, conectar nações ao redor do mundo, estabelecer uma comunidade interpessoal genuína e desenvolver uma plataforma divertida e envolvente. Também aspiramos criar estrelas online de alta qualidade. Os talentos sociais serão recomendados globalmente pelo POPPO. Um dos passos mais importantes nas relações sociais é aprender a construir relacionamentos com os outros. Basta abrir o POPPO LIVE para conhecer pessoas de outros países.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>

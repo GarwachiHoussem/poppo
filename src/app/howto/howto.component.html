@@ -1,0 +1,97 @@
+<br><br><br>
+<div class="container">
+    <h1>How To Register Poppo Agency?</h1>
+    <div class="row ">
+        <div class="col text-center">
+            <a class="btn btn-primary btn-lg" [href]="linkagent" target="_blank">Become  Agent in Poppo Live</a>
+        </div>
+    </div>
+    <div class="row align-items-center p-3">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <ol>
+          <li><a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu" target="_blank">Download</a> Poppo Live.</li>
+          <br>
+          <div class="d-flex gap-1">
+            <!-- Play Store Button -->
+            <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-google-play"></i> Download on Play Store
+            </a>
+    
+            <!-- Apple Store Button -->
+            <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-apple"></i> Download on Apple Store
+            </a>
+    
+            <!-- Huawei Store Button -->
+            <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-huawei"></i> Download on Huawei Store
+            </a>
+    
+            <!-- APK Download Button -->
+            <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/" class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-file-earmark-arrow-down"></i> Download APK
+            </a>
+          </div>
+    
+          <!-- Bootstrap Icons CDN (for icons) -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+          <br>
+          <li>Create an Account on Poppo Live App.</li>
+          <li>Copy Your Poppo ID from the profile.</li>
+          <li>Click on the <a href="linkagent">Agency Registration Link</a>.</li>
+          <li>Enter Poppo ID & Click “Get”.</li>
+          <li>Find the verification code in Poppo messages.</li>
+          <li>Enter the Verification Code & submit.</li>
+        </ol>
+      </div>
+    </div>
+    
+ 
+
+        <div class="container ">
+            <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+              <!-- Live Stream Card -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(live_stream)"> 
+                <img [src]="live_stream" alt="Live Stream" class="card-img-top">
+              </div>
+          
+              <!-- Party Room Card -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(party_room)">
+                <img [src]="party_room" alt="Party Room" class="card-img-top">
+              </div>
+          
+              <!-- Short Video Card -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(short_video)">
+                <img [src]="short_video" alt="Short Video" class="card-img-top">
+              </div>
+          
+              <!-- Dual Animation Card -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(dual_animation)">
+                <img [src]="dual_animation" alt="Dual Animation" class="card-img-top">
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+            <div class="col text-center">
+              <a class="btn btn-warning btn-lg w-100" [href]="linkagent" target="_blank">AGENCY REGISTRATION LINK</a>
+            </div>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="border: none;"> <!-- Remove border -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img id="modalImage" src="" alt="Image Preview" class="img-fluid" style="border: none;"> <!-- Remove border -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+</div>

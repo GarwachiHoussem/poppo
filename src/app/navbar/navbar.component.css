@@ -1,0 +1,6 @@
+.flag-icon {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Space between the flag icon and text */
+    vertical-align: middle; /* Align the flag icon vertically with text */
+}

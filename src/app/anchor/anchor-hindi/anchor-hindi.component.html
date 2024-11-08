@@ -1,0 +1,163 @@
+<br><br><br>
+<div class="container">
+    <h2>Poppo Live प्लेटफॉर्म पर प्रसारक कैसे बनें?</h2>
+
+    <div class="row align-items-center p-3">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <ol>
+                <li><a [href]="link_comission" target="_blank">Poppo Live ऐप डाउनलोड करें।</a></li>
+                <br>
+                <div class="d-flex gap-1">
+                    <!-- Play Store Button -->
+                    <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu"
+                        class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-google-play"></i> Google Play से डाउनलोड करें
+                    </a>
+
+                    <!-- Apple Store Button -->
+                    <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8"
+                        class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-apple"></i> Apple Store से डाउनलोड करें
+                    </a>
+
+                    <!-- Huawei Store Button -->
+                    <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-huawei"></i> Huawei Store से डाउनलोड करें
+                    </a>
+
+                    <!-- APK Download Button -->
+                    <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/"
+                        class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-arrow-down"></i> APK डाउनलोड करें
+                    </a>
+                </div>
+                <!-- Bootstrap Icons CDN (icons for buttons) -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+                <br>
+                <li>Poppo Live ऐप में लॉग इन करें।</li>
+
+                <li>"प्रोफ़ाइल" बटन पर क्लिक करें।</li>
+
+                <li>"एजेंट" विकल्प का चयन करें।</li>
+
+                <li>यह ID डालें: <span>2902803</span> और पुष्टि करें।</li>
+
+                <li>लाइव स्ट्रीम बटन पर क्लिक करें और चेहरे की पहचान प्रक्रिया को पूरा करें।</li>
+                <div class="container ">
+                    <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+                        <!-- step1 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step1)">
+                            <img [src]="step1" alt="step1" class="card-img-top">
+                        </div>
+
+                        <!-- step2 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step2)">
+                            <img [src]="step2" alt="step2" class="card-img-top">
+                        </div>
+
+                        <!-- step3 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step3)">
+                            <img [src]="step3" alt="step3" class="card-img-top">
+                        </div>
+
+                        <!-- step4 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step4)">
+                            <img [src]="step4" alt="step4" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
+            </ol>
+            <h6 style="text-align: center; color:red"  >🎉 बधाई हो! 🎉<br></h6>
+            <h6 style="text-align: center; "> अब आप Poppo पर प्रसारक बन सकते हैं! <br>
+                📹 तुरंत प्रसारण शुरू करें! 🌟</h6>
+                
+        </div>
+
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+                <!-- Live Stream Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(live_stream)">
+                    <img [src]="live_stream" alt="Livestream" class="card-img-top">
+                </div>
+
+                <!-- Party Room Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(party_room)">
+                    <img [src]="party_room" alt="Party Room" class="card-img-top">
+                </div>
+
+                <!-- Short Video Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(short_video)">
+                    <img [src]="short_video" alt="Short Video" class="card-img-top">
+                </div>
+
+                <!-- Dual Animation Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(dual_animation)">
+                    <img [src]="dual_animation" alt="Dual Animation" class="card-img-top">
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border: none;"> <!-- Border' को हटाएं -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">छवि पूर्वावलोकन</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="छवि पूर्वावलोकन" class="img-fluid" style="border: none;">
+                        <!-- Border' को हटाएं -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <h1>संपर्क करें</h1>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <p>हमारी टीम 24/7 तकनीकी सहायता प्रदान करती है।</p>
+                <div class="d-flex flex-column flex-md-row">
+                    <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037"
+                        target="_blank">व्हाट्सएप पर हमसे संपर्क करें</a>
+                   
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img [src]="contact" alt="संपर्क" class="rounded shadow"
+                    style="border-radius: 15px; border: 2px solid #ddd;">
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <h1>हमारे बारे में</h1>
+        <div class="container my-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <p>
+                        POPPO LIVE एक लाइव स्ट्रीमिंग प्लेटफ़ॉर्म है। हम अपने निरंतर प्रयासों के माध्यम से लाखों साधारण लोगों के स्टार बनने के सपने को पूरा करने में मदद करने, एक सच्ची समुदाय बनाने और एक मनोरंजक प्लेटफ़ॉर्म बनाने की उम्मीद करते हैं। हम POPPO का उपयोग करके दुनिया भर से सामाजिक कौशल का प्रतिनिधित्व करना चाहते हैं और ऑनलाइन सितारों का निर्माण करना चाहते हैं। सोशल इंटरएक्शन का सबसे महत्वपूर्ण हिस्सा यह है कि दूसरों से कैसे जुड़ा जाए। बस POPPO LIVE खोलें और विभिन्न देशों के लोगों से मिलें।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

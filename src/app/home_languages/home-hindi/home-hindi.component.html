@@ -1,0 +1,115 @@
+<br><br><br>
+<div class="center-container">
+    <button [routerLink]="['/hi']" routerLinkActive="router-link-active" class="button-64" role="button"><span style="color: white;" class="text">क्या आप एजेंट बनना चाहते हैं?</span></button>
+    <h3>या</h3>
+    <button [routerLink]="['/anchor/hindi']" routerLinkActive="router-link-active" class="button-78" role="button">क्या आप होस्ट बनना चाहते हैं?</button>
+    <img class="img" src="{{all_countries}}" alt="">
+</div>
+
+<div class="row align-items-center p-3">
+    <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <ol>
+            <li><a [href]="link_comission" target="_blank">डाउनलोड करें</a> Poppo Live।</li>
+            <br>
+            <div class="d-flex gap-1">
+                <!-- प्ले स्टोर बटन -->
+                <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu"
+                    class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-google-play"></i> प्ले स्टोर से डाउनलोड करें
+                </a>
+
+                <!-- एप्पल स्टोर बटन -->
+                <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8"
+                    class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-apple"></i> एप्पल स्टोर से डाउनलोड करें
+                </a>
+
+                <!-- हुआवे स्टोर बटन -->
+                <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-huawei"></i> हुआवे स्टोर से डाउनलोड करें
+                </a>
+
+                <!-- एपीके डाउनलोड बटन -->
+                <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/"
+                    class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-earmark-arrow-down"></i> एपीके डाउनलोड करें
+                </a>
+            </div>
+<div class="container">
+    <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+        <!-- लाइव स्ट्रीम कार्ड -->
+        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+            (click)="openModal(live_stream)">
+            <img [src]="live_stream" alt="लाइव स्ट्रीम" class="card-img-top">
+        </div>
+
+        <!-- पार्टी रूम कार्ड -->
+        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+            (click)="openModal(party_room)">
+            <img [src]="party_room" alt="पार्टी रूम" class="card-img-top">
+        </div>
+
+        <!-- शॉर्ट वीडियो कार्ड -->
+        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+            (click)="openModal(short_video)">
+            <img [src]="short_video" alt="शॉर्ट वीडियो" class="card-img-top">
+        </div>
+
+        <!-- दोहरी एनीमेशन कार्ड -->
+        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+            (click)="openModal(dual_animation)">
+            <img [src]="dual_animation" alt="दोहरी एनीमेशन" class="card-img-top">
+        </div>
+    </div>
+</div>
+
+<!-- मॉडेल -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border: none;"> <!-- बॉर्डर हटाएं -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">छवि पूर्वावलोकन</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="बंद करें"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" alt="छवि पूर्वावलोकन" class="img-fluid" style="border: none;">
+                <!-- बॉर्डर हटाएं -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container">
+<h1>हमसे संपर्क करें</h1>
+<div class="row align-items-center">
+    <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <p>हम अपनी टीम को ग्राहक सहायता प्रदान करने के लिए 24/7 उपलब्ध हैं।</p>
+        <div class="d-flex flex-column flex-md-row">
+            <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037"
+                target="_blank">WhatsApp के माध्यम से संपर्क करें</a>
+            
+        </div>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img [src]="contact" alt="संपर्क" class="rounded shadow"
+            style="border-radius: 15px; border: 2px solid #ddd;">
+    </div>
+</div>
+</div>
+<br><br>
+
+<div class="container">
+<h1>हमारे बारे में</h1>
+<div class="container my-4">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <p>
+                POPPO LIVE एक लाइव स्ट्रीमिंग प्लेटफ़ॉर्म है। हमारे लगातार प्रयासों से, हम दुनिया भर में लाखों आम लोगों के स्टार बनने के सपने को साकार करना चाहते हैं, राष्ट्रों को जोड़ना, एक वास्तविक सामाजिक समुदाय की स्थापना करना, और एक मनोरंजक और आकर्षक प्लेटफ़ॉर्म विकसित करना चाहते हैं। हम उच्च गुणवत्ता के ऑनलाइन सितारों को भी बनाना चाहते हैं। POPPO द्वारा विश्व स्तर पर सामाजिक प्रतिभाओं को प्रस्तुत किया जाएगा। सामाजिक संबंधों में सबसे महत्वपूर्ण कदमों में से एक दूसरों के साथ संबंध बनाना सीखना है। बस POPPO LIVE खोलें और अन्य राष्ट्रों के लोगों से मिलें।
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+

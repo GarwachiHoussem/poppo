@@ -1,39 +1,39 @@
 <br><br><br>
 <div class="center-container">
-    <button class="button-64" role="button"><span style="color: white;" class="text">Do you want to become an Agent?</span></button>
-    <h3>or</h3>
-    <button class="button-78" role="button">Do you want to become a Host?</button>
+    <button [routerLink]="['/fil']" routerLinkActive="router-link-active" class="button-64" role="button"><span style="color: white;" class="text">Gusto mo bang maging Ahente?</span></button>
+    <h3>o</h3>
+    <button [routerLink]="['/anchor/filipino']" routerLinkActive="router-link-active" class="button-78" role="button">Gusto mo bang maging Host?</button>
     <img class="img" src="{{all_countries}}" alt="">
-    
 </div>
+
 <div class="row align-items-center p-3">
     <div class="col-12 col-md-6 mb-3 mb-md-0">
         <ol>
-            <li><a [href]="link_comission" target="_blank">Download</a> Poppo Live.</li>
+            <li><a [href]="link_comission" target="_blank">I-download</a> Poppo Live.</li>
             <br>
             <div class="d-flex gap-1">
                 <!-- Play Store Button -->
                 <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu"
                     class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-google-play"></i> Download on the Play Store
+                    <i class="bi bi-google-play"></i> I-download sa Play Store
                 </a>
 
                 <!-- Apple Store Button -->
                 <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8"
                     class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-apple"></i> Download on the Apple Store
+                    <i class="bi bi-apple"></i> I-download sa Apple Store
                 </a>
 
                 <!-- Huawei Store Button -->
                 <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm"
                     target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-huawei"></i> Download on the Huawei Store
+                    <i class="bi bi-huawei"></i> I-download sa Huawei Store
                 </a>
 
                 <!-- APK Download Button -->
                 <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/"
                     class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-file-earmark-arrow-down"></i> Download the APK
+                    <i class="bi bi-file-earmark-arrow-down"></i> I-download ang APK
                 </a>
             </div>
 <div class="container">
@@ -53,7 +53,7 @@
         <!-- Short Video Card -->
         <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
             (click)="openModal(short_video)">
-            <img [src]="short_video" alt="Short Video" class="card-img-top">
+            <img [src]="short_video" alt="Maikling Video" class="card-img-top">
         </div>
 
         <!-- Dual Animation Card -->
@@ -64,40 +64,36 @@
     </div>
 </div>
 
-
-
 <!-- Modal -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="border: none;"> <!-- Remove the border -->
+        <div class="modal-content" style="border: none;"> <!-- Alisin ang border -->
             <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="imageModalLabel">Preview ng Imahe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Isara"></button>
             </div>
             <div class="modal-body text-center">
-                <img id="modalImage" src="" alt="Image Preview" class="img-fluid" style="border: none;">
-                <!-- Remove the border -->
+                <img id="modalImage" src="" alt="Preview ng Imahe" class="img-fluid" style="border: none;">
+                <!-- Alisin ang border -->
             </div>
         </div>
     </div>
 </div>
 
-
-
 <br>
 <div class="container">
-<h1>Contact Us</h1>
+<h1>Makipag-ugnayan sa Amin</h1>
 <div class="row align-items-center">
     <div class="col-12 col-md-6 mb-3 mb-md-0">
-        <p>We are available 24/7 to provide customer support to our team.</p>
+        <p>Araw-araw kami ay available 24/7 para magbigay ng suporta sa aming mga miyembro.</p>
         <div class="d-flex flex-column flex-md-row">
             <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037"
-                target="_blank">Contact via WhatsApp</a>
+                target="_blank">Makipag-ugnayan sa WhatsApp</a>
             
         </div>
     </div>
     <div class="col-12 col-md-6 d-flex justify-content-center">
-        <img [src]="contact" alt="contact" class="rounded shadow"
+        <img [src]="contact" alt="kontak" class="rounded shadow"
             style="border-radius: 15px; border: 2px solid #ddd;">
     </div>
 </div>
@@ -105,15 +101,14 @@
 <br><br>
 
 <div class="container">
-<h1>About Us</h1>
+<h1>Tungkol sa Amin</h1>
 <div class="container my-4">
     <div class="row align-items-center">
         <div class="col-12 col-md-6 mb-3 mb-md-0">
             <p>
-                POPPO LIVE is a live streaming platform. Through our continuous efforts, we aim to realize the star dream of hundreds of millions of ordinary people by connecting nations around the world, establishing a real interpersonal community, and developing an entertaining and engaging platform. We also aim to create high-quality online stars. Social talents will be recommended globally by POPPO. One of the most important steps in social relationships is learning how to build relationships with others. Just open POPPO LIVE to meet people from other nations.
+                Ang POPPO LIVE ay isang live streaming platform. Sa pamamagitan ng aming patuloy na pagsisikap, layunin naming makamit ang pangarap ng pagiging bituin ng milyon-milyong ordinaryong tao sa pamamagitan ng pagkonekta ng mga bansa sa buong mundo, pagtataguyod ng isang tunay na interpersonal na komunidad, at pagbuo ng isang nakakaaliw at kaakit-akit na plataporma. Nais din naming lumikha ng mga de-kalidad na online na bituin. Ang mga social na talento ay ire-rekomenda ng POPPO sa buong mundo. Isa sa mga pinakamahalagang hakbang sa relasyon sa lipunan ay ang matutong makipag-ugnayan sa iba. Buksan lang ang POPPO LIVE para makakilala ng mga tao mula sa ibang bansa.
             </p>
         </div>
     </div>
 </div>
 </div>
-

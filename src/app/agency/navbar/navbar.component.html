@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color:#7532FA;">
+  <div class="container-fluid d-flex align-items-center">
+    <!-- Logo -->
+    <img class="imagecss img-fluid" [src]="logo" alt="how to register">
+
+    <!-- Language Dropdown Button -->
+    <div class="ms-auto">
+      <div class="dropdown">
+        <button
+          class="btn btn-light dropdown-toggle"
+          type="button"
+          id="languageDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Language
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" routerLink="arabic"><img src="/flags/arabic.svg" alt="Arabic Flag" class="flag-icon"> العربية (Arabic)</a></li>
+          <li><a class="dropdown-item" routerLink=""><img src="/flags/english.svg" alt="English Flag" class="flag-icon"> English (Anglais)</a></li>
+          <li><a class="dropdown-item" routerLink="chineese"><img src="/flags/chinese.svg" alt="Chinese Flag" class="flag-icon"> 中文 (Chinese)</a></li>
+          <li><a class="dropdown-item" routerLink="hindi"><img src="/flags/hindi.svg" alt="Hindi Flag" class="flag-icon"> हिंदी (Hindi)</a></li>
+          <li><a class="dropdown-item" routerLink="espagnol"><img src="/flags/spanish.svg" alt="Spanish Flag" class="flag-icon"> Español (Spanish)</a></li>
+          <li><a class="dropdown-item" routerLink="french"><img src="/flags/french.svg" alt="French Flag" class="flag-icon"> Français (French)</a></li>
+          <li><a class="dropdown-item" routerLink="deutsch"><img src="/flags/german.svg" alt="German Flag" class="flag-icon"> Deutsch (German)</a></li>
+          <li><a class="dropdown-item" routerLink="russian"><img src="/flags/russian.svg" alt="Russian Flag" class="flag-icon"> Русский (Russian)</a></li>
+          <li><a class="dropdown-item" routerLink="turkish"><img src="/flags/turkish.svg" alt="Turkish Flag" class="flag-icon"> Türkçe (Turkish)</a></li>
+          <li><a class="dropdown-item" routerLink="filipino"><img src="/flags/filipino.svg" alt="Filipino Flag" class="flag-icon"> Filipino</a></li>
+          <li><a class="dropdown-item" routerLink="portuguese"><img src="/flags/portuguese.svg" alt="Portuguese Flag" class="flag-icon"> Português (Portuguese)</a></li>
+      </ul>
+      
+      </div>
+    </div>
+  </div>
+</nav>

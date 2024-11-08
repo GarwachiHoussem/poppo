@@ -1,0 +1,49 @@
+.image-card {
+    width: 100%;
+    max-width: 200px;
+    /* Taille fixe pour chaque carte */
+    border-radius: 10px;
+
+    margin: 0.25rem;
+    /* Ajustez cette valeur selon vos besoins */
+
+
+}
+
+.image-card {
+    margin: 0.25rem;
+    /* Ajustez cette valeur selon vos besoins */
+}
+
+.card-img-top {
+
+    border-radius: 10px;
+
+}
+.modal-content {
+    border: none !important; /* Removes the border from the modal */
+}
+
+.modal-body img {
+    border: none !important; /* Removes the border from the image */
+}
+
+.card-body {
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+span{
+    color:red;
+
+}
+h5{
+    color:black;
+
+}
+.card-img-top {
+    border: 2px silver gray; /* Adjust the color and thickness as desired */
+    border-radius: 8px; /* Optional: adds rounded corners to the images */
+    padding: 5px; /* Optional: adds spacing between the border and image */
+}

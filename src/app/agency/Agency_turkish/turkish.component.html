@@ -1,0 +1,155 @@
+<br><br><br>
+<div class="container">
+    <h1>Poppo Ajansına Nasıl Kayıt Olunur?</h1>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <a class="btn btn-primary btn-lg" [href]="linkagent" target="_blank">Poppo Live'da Ajan Olun</a>
+        </div>
+    </div>
+    <div class="row align-items-center p-3">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <ol>
+                <li><a [href]="link_comission" target="_blank">İndirin</a> Poppo Live.</li>
+                <br>
+                <div class="d-flex gap-1">
+                  <!-- Play Store Button -->
+                  <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-google-play"></i> Play Store'dan İndir
+                  </a>
+              
+                  <!-- Apple Store Button -->
+                  <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-apple"></i> Apple Store'dan İndir
+                  </a>
+              
+                  <!-- Huawei Store Button -->
+                  <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-huawei"></i> Huawei Store'dan İndir
+                  </a>
+              
+                  <!-- APK Download Button -->
+                  <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/" class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-file-earmark-arrow-down"></i> APK İndir
+                  </a>
+              </div>
+              
+                  
+                  <!-- Bootstrap Icons CDN (simge için) -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+                  <br>
+                <li>Poppo Live uygulamasında bir hesap oluşturun.</li>
+                <li>Profilinizden Poppo ID’nizi kopyalayın.</li>
+                <li><a [href]="linkagent">Ajans Kayıt Bağlantısına</a> tıklayın.</li>
+                <li>Poppo ID’nizi girin ve “Al” butonuna tıklayın.</li>
+                <li>Poppo mesajlarında doğrulama kodunu bulun.</li>
+                <li>Doğrulama Kodunu girin ve gönderin.</li>
+            </ol>
+        </div>
+ 
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+              <!-- Canlı Yayın Kartı -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(live_stream)"> 
+                <img [src]="live_stream" alt="Canlı Yayın" class="card-img-top">
+              </div>
+          
+              <!-- Parti Odası Kartı -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(party_room)">
+                <img [src]="party_room" alt="Parti Odası" class="card-img-top">
+              </div>
+          
+              <!-- Kısa Video Kartı -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(short_video)">
+                <img [src]="short_video" alt="Kısa Video" class="card-img-top">
+              </div>
+          
+              <!-- Çiftli Animasyon Kartı -->
+              <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal" (click)="openModal(dual_animation)">
+                <img [src]="dual_animation" alt="Çiftli Animasyon" class="card-img-top">
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-3">
+            <div class="col text-center">
+              <a class="btn btn-warning btn-lg w-100" [href]="linkagent" target="_blank">AJANS KAYIT BAĞLANTISI</a>
+            </div>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="border: none;"> <!-- Kenarlığı kaldır -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalLabel">Resim Önizlemesi</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img id="modalImage" src="" alt="Resim Önizlemesi" class="img-fluid" style="border: none;"> <!-- Kenarlığı kaldır -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+</div>
+
+<div class="container">
+  <h1>Bize Ulaşın</h1>
+  <div class="row align-items-center">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <p>Ekibimize müşteri desteği sağlamak için 7/24 hizmetinizdeyiz.</p>
+          <div class="d-flex flex-column flex-md-row">
+              <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037" target="_blank">WhatsApp İletişimi</a>
+              <a class="btn btn-primary" [href]="linkagent" target="_blank">Poppo Ajanı Olun</a>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+          <img [src]="contact" alt="contact" class="rounded shadow" style="border-radius: 15px; border: 2px solid #ddd;">
+      </div>
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+  <h1>Hakkımızda</h1>
+  <div class="container my-4">
+      <div class="row align-items-center">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+              <p>
+                  POPPO LIVE, canlı yayın platformudur. Sürekli çabalarımız sayesinde, yüz milyonlarca sıradan insanın yıldız hayalini gerçekleştirmeyi umuyoruz, ülkeleri birbirine bağlıyoruz, gerçek bir kişilerarası topluluk kuruyoruz ve eğlenceli ve ilgi çekici bir platform geliştiriyoruz. Ayrıca yüksek kaliteli çevrimiçi yıldızlar yaratmayı da amaçlıyoruz. Sosyal yetenekler POPPO tarafından küresel olarak önerilecektir. Sosyal ilişkilerde en önemli adımlardan biri, başkalarıyla ilişkiler kurmayı öğrenmektir. Diğer ülkelerden insanlarla tanışmak için sadece POPPO LIVE'i açın.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <h1>Contáctanos</h1>
+  <div class="row align-items-center">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <p>Estamos disponibles 24/7 para brindar soporte al cliente a nuestro equipo.</p>
+          <div class="d-flex flex-column flex-md-row">
+              <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037" target="_blank">Contacto por WhatsApp</a>
+              <a class="btn btn-primary" [href]="linkagent" target="_blank">Conviértete en Agente Poppo</a>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+          <img [src]="contact" alt="contact" class="rounded shadow" style="border-radius: 15px; border: 2px solid #ddd;">
+      </div>
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+  <h1>Sobre nosotros</h1>
+  <div class="container my-4">
+      <div class="row align-items-center">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+              <p>
+                  POPPO LIVE es una plataforma para transmisiones en vivo. A través de nuestros esfuerzos constantes, esperamos cumplir el sueño de estrella de cientos de millones de personas comunes al conectar naciones de todo el mundo, estableciendo una comunidad interpersonal genuina y desarrollando una plataforma entretenida y atractiva. También aspiramos a crear estrellas en línea de alta calidad. Los talentos sociales serán recomendados globalmente por POPPO. Uno de los pasos más importantes en las relaciones sociales es aprender a construir relaciones con los demás. Simplemente abre POPPO LIVE para conocer gente de otras naciones.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>

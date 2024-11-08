@@ -1,0 +1,131 @@
+<br><br><br>
+<div class="container">
+    <h1>如何注册Poppo代理机构？</h1>
+    <div class="row mt-3">
+        <div class="col text-center">
+            <a class="btn btn-primary btn-lg" [href]="linkagent" target="_blank">成为Poppo Live代理</a>
+        </div>
+    </div>
+    <div class="row align-items-center p-3">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <ol>
+                <li><a [href]="link_comission" target="_blank">下载</a> Poppo Live。</li>
+                <br>
+                <div class="d-flex gap-1">
+                    <!-- Play Store Button -->
+                    <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu" class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-google-play"></i> 在 Play 商店下载
+                    </a>
+                
+                    <!-- Apple Store Button -->
+                    <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-apple"></i> 在 Apple 商店下载
+                    </a>
+                
+                    <!-- Huawei Store Button -->
+                    <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-huawei"></i> 在华为商店下载
+                    </a>
+                
+                    <!-- APK Download Button -->
+                    <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/" class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-arrow-down"></i> 下载 APK
+                    </a>
+                </div>
+                
+
+                <!-- Bootstrap图标CDN (用于图标) -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+                <br>
+                <li>在Poppo Live应用中创建一个帐户。</li>
+                <li>从个人资料中复制您的Poppo ID。</li>
+                <li>点击 <a [href]="linkagent">代理注册链接</a>。</li>
+                <li>输入您的Poppo ID并点击“获取”。</li>
+                <li>在Poppo消息中找到验证码。</li>
+                <li>输入验证码并提交。</li>
+            </ol>
+        </div>
+
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+                <!-- 直播卡片 -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(live_stream)">
+                    <img [src]="live_stream" alt="直播" class="card-img-top">
+                </div>
+
+                <!-- 派对房间卡片 -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(party_room)">
+                    <img [src]="party_room" alt="派对房间" class="card-img-top">
+                </div>
+
+                <!-- 短视频卡片 -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(short_video)">
+                    <img [src]="short_video" alt="短视频" class="card-img-top">
+                </div>
+
+                <!-- 双人动画卡片 -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(dual_animation)">
+                    <img [src]="dual_animation" alt="双人动画" class="card-img-top">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col text-center">
+                <a class="btn btn-warning btn-lg w-100" [href]="linkagent" target="_blank">代理注册链接</a>
+            </div>
+        </div>
+
+        <!-- 模态框 -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border: none;"> <!-- 移除边框 -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">图片预览</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="图片预览" class="img-fluid" style="border: none;"> <!-- 移除边框 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <h1>联系我们</h1>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <p>我们全天候提供客户支持。</p>
+                <div class="d-flex flex-column flex-md-row">
+                    <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037" target="_blank">WhatsApp 联系</a>
+                    <a class="btn btn-primary" [href]="linkagent" target="_blank">成为 Poppo 代理</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img [src]="contact" alt="contact" class="rounded shadow" style="border-radius: 15px; border: 2px solid #ddd;">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+    <div class="container">
+        <h1>关于我们</h1>
+        <div class="container my-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <p>
+                        POPPO LIVE 是一个直播平台。通过我们的不懈努力，我们希望实现数亿普通人的明星梦想，连接全球国家，建立真正的人际社区，并开发一个有趣且引人入胜的平台。我们还旨在创造高质量的在线明星。社交人才将由 POPPO 全球推荐。在社交关系中，学习如何与他人建立关系是最重要的一步之一。只需打开 POPPO LIVE，即可结识来自其他国家的人。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    

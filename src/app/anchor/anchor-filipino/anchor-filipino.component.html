@@ -1,0 +1,162 @@
+<br><br><br>
+<div class="container">
+    <h2>Paano maging host sa Poppo Live platform?</h2>
+
+    <div class="row align-items-center p-3">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <ol>
+                <li><a [href]="link_comission" target="_blank">I-download</a> ang Poppo Live app.</li>
+                <br>
+                <div class="d-flex gap-1">
+                    <!-- Play Store Button -->
+                    <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu"
+                        class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-google-play"></i> I-download mula sa Google Play
+                    </a>
+
+                    <!-- Apple Store Button -->
+                    <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8"
+                        class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-apple"></i> I-download mula sa Apple Store
+                    </a>
+
+                    <!-- Huawei Store Button -->
+                    <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-huawei"></i> I-download mula sa Huawei Store
+                    </a>
+
+                    <!-- APK Download Button -->
+                    <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/"
+                        class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-arrow-down"></i> I-download ang APK
+                    </a>
+                </div>
+                <!-- Bootstrap Icons CDN (for icons) -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+                <br>
+                <li>Mag-sign up sa Poppo Live app.</li>
+
+                <li>Pindutin ang "Profile" button.</li>
+
+                <li>Pumili ng <span>Agent</span>.</li>
+
+                <li>Ilagay ang ID na ito: <span>2902803</span> at i-confirm.</li>
+
+                <li>Pindutin ang live streaming button at tapusin ang facial recognition.</li>
+                <div class="container ">
+                    <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+                        <!-- step1 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step1)">
+                            <img [src]="step1" alt="step1" class="card-img-top">
+                        </div>
+
+                        <!-- step2 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step2)">
+                            <img [src]="step2" alt="step2" class="card-img-top">
+                        </div>
+
+                        <!-- step3 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step3)">
+                            <img [src]="step3" alt="step3" class="card-img-top">
+                        </div>
+
+                        <!-- step4 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step4)">
+                            <img [src]="step4" alt="step4" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
+            </ol>
+            <h6 style="text-align: center; color:red"  >🎉 Congratulations! 🎉<br></h6>
+            <h6 style="text-align: center; "> Ngayon ay maaari ka nang maging host sa Poppo. <br>
+                📹 Simulan na ang iyong live streaming! 🌟</h6>
+                
+        </div>
+
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+                <!-- Live Stream Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(live_stream)">
+                    <img [src]="live_stream" alt="Livestream" class="card-img-top">
+                </div>
+
+                <!-- Party Room Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(party_room)">
+                    <img [src]="party_room" alt="Party Room" class="card-img-top">
+                </div>
+
+                <!-- Short Video Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(short_video)">
+                    <img [src]="short_video" alt="Short Video" class="card-img-top">
+                </div>
+
+                <!-- Dual Animation Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(dual_animation)">
+                    <img [src]="dual_animation" alt="Dual Animation" class="card-img-top">
+                </div>
+            </div>
+        </div>
+
+       
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border: none;"> <!-- Remove border -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Preview Image</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="Preview Image" class="img-fluid" style="border: none;">
+                        <!-- Remove border -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <p>We offer 24/7 technical support to assist our team.</p>
+                <div class="d-flex flex-column flex-md-row">
+                    <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037"
+                        target="_blank">Contact Us on WhatsApp</a>
+                   
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img [src]="contact" alt="Contact Us" class="rounded shadow"
+                    style="border-radius: 15px; border: 2px solid #ddd;">
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="container my-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <p>
+                        POPPO LIVE is a live streaming platform. Through our tireless efforts, we hope to help millions of ordinary people fulfill their dream of becoming stars, creating a real community, and developing a fun platform. We want to use POPPO to showcase social talents globally and create online stars. One of the most important steps in social interaction is learning how to connect with others. Simply open POPPO LIVE and meet people from other countries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

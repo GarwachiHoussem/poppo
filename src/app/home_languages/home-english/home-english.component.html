@@ -1,8 +1,8 @@
 <br><br><br>
 <div class="center-container">
-    <button class="button-64" role="button"><span style="color: white;" class="text">Do you want to become an Agent?</span></button>
+    <button [routerLink]="['/en']" routerLinkActive="router-link-active" class="button-64" role="button"><span style="color: white;" class="text">Do you want to become an Agent?</span></button>
     <h3>or</h3>
-    <button class="button-78" role="button">Do you want to become a Host?</button>
+    <button [routerLink]="['anchor/english']" routerLinkActive="router-link-active" class="button-78" role="button">Do you want to become a Host?</button>
     <img class="img" src="{{all_countries}}" alt="">
     
 </div>
@@ -116,4 +116,5 @@
     </div>
 </div>
 </div>
+
 

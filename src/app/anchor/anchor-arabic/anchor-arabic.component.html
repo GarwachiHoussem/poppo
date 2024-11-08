@@ -1,0 +1,163 @@
+<br><br><br>
+<div class="container" style="direction: rtl; text-align: right;">
+    <h2>كيف تصبح مذيعًا على منصة Poppo Live؟</h2>
+
+    <div class="row align-items-center p-3">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <ol>
+                <li><a [href]="link_comission" target="_blank">قم بتحميل تطبيق Poppo Live.</a></li>
+                <br>
+                <div class="d-flex gap-1">
+                    <!-- Play Store Button -->
+                    <a href="https://play.google.com/store/apps/details?id=com.baitu.qingshu"
+                        class="btn btn-success btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-google-play"></i> تحميل من متجر جوجل بلاي
+                    </a>
+
+                    <!-- Apple Store Button -->
+                    <a href="https://apps.apple.com/us/app/poppo-live-live-stream/id1544908797?mt=8"
+                        class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-apple"></i> تحميل من متجر آبل
+                    </a>
+
+                    <!-- Huawei Store Button -->
+                    <a href="https://static.vshowapi.com/huawei_download/" class="btn btn-primary btn-sm"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-huawei"></i> تحميل من متجر هواوي
+                    </a>
+
+                    <!-- APK Download Button -->
+                    <a href="https://apkcombo.com/poppo-live-live-stream/com.baitu.qingshu/"
+                        class="btn btn-warning btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-arrow-down"></i> تحميل ملف APK
+                    </a>
+                </div>
+                <!-- Bootstrap Icons CDN (icons for buttons) -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+                <br>
+                <li>قم بتسجيل الدخول إلى تطبيق Poppo Live.</li>
+
+                <li>انقر على زر "الملف الشخصي".</li>
+
+                <li>اختر خيار "الوكيل".</li>
+
+                <li>ادخل هذا المعرف: <span>2902803</span> ثم اضغط تأكيد.</li>
+
+                <li>انقر على زر "بث مباشر" وأكمل عملية التعرف على الوجه.</li>
+                <div class="container ">
+                    <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+                        <!-- step1 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step1)">
+                            <img [src]="step1" alt="step1" class="card-img-top">
+                        </div>
+
+                        <!-- step2 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step2)">
+                            <img [src]="step2" alt="step2" class="card-img-top">
+                        </div>
+
+                        <!-- step3 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step3)">
+                            <img [src]="step3" alt="step3" class="card-img-top">
+                        </div>
+
+                        <!-- step4 Card -->
+                        <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" (click)="openModal(step4)">
+                            <img [src]="step4" alt="step4" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
+            </ol>
+            <h6 style="text-align: center; color:red"  >🎉 تهانينا! 🎉<br></h6>
+            <h6 style="text-align: center; "> الآن يمكنك أن تصبح مذيعًا على Poppo! <br>
+                📹 ابدأ البث المباشر فورًا! 🌟</h6>
+                
+        </div>
+
+
+        <div class="container">
+            <div class="d-flex justify-content-center flex-nowrap overflow-auto">
+                <!-- Live Stream Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(live_stream)">
+                    <img [src]="live_stream" alt="Livestream" class="card-img-top">
+                </div>
+
+                <!-- Party Room Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(party_room)">
+                    <img [src]="party_room" alt="Party Room" class="card-img-top">
+                </div>
+
+                <!-- Short Video Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(short_video)">
+                    <img [src]="short_video" alt="Short Video" class="card-img-top">
+                </div>
+
+                <!-- Dual Animation Card -->
+                <div class="card image-card text-center shadow mx-1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    (click)="openModal(dual_animation)">
+                    <img [src]="dual_animation" alt="Dual Animation" class="card-img-top">
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border: none;"> <!-- Border' کو حذف کریں -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">معاينة الصورة</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="معاينة الصورة" class="img-fluid" style="border: none;">
+                        <!-- Border' کو حذف کریں -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <h1>اتصل بنا</h1>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <p>فريقنا يقدم الدعم الفني على مدار الساعة.</p>
+                <div class="d-flex flex-column flex-md-row">
+                    <a class="btn btn-success mb-2 mb-md-0 me-md-2" href="https://wa.me/+21651030037"
+                        target="_blank">اتصل بنا عبر الواتساب</a>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img [src]="contact" alt="اتصال" class="rounded shadow"
+                    style="border-radius: 15px; border: 2px solid #ddd;">
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <h1>معلومات عنا</h1>
+        <div class="container my-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <p>
+                        POPPO LIVE هو منصة للبث المباشر. نحن نأمل من خلال جهودنا المستمرة أن نساعد في تحقيق حلم ملايين الأشخاص العاديين ليصبحوا نجومًا، وأن نخلق مجتمعًا حقيقيًا ومنصة ترفيهية. نحن نريد تمثيل المهارات الاجتماعية من جميع أنحاء العالم باستخدام POPPO، وأن نبني نجومًا على الإنترنت. الجزء الأكثر أهمية في التفاعل الاجتماعي هو كيف يمكنك الاتصال بالآخرين. فقط افتح POPPO LIVE وتعرف على الناس من جميع أنحاء العالم.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
